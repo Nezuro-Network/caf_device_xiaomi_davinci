@@ -1,5 +1,5 @@
 KERNEL=https://github.com/ArianK16a/android_kernel_xiaomi_sm6150
-HW=https://github.com/LineageOS/android_hardware_xiaomi
+HW=https://github.com/ArianK16a/android_hardware_xiaomi
 VENDOR=https://github.com/xiaomi-sm6150/android_vendor_xiaomi
 COMMON=https://github.com/Nezuro-Network/android_device_xiaomi_sm6150-common
 
@@ -10,7 +10,7 @@ fi
 
 if [ ! -d "hardware/xiaomi" ]
 then
-	git clone $HW hardware/xiaomi -b lineage-19.0 --depth=1
+	git clone $HW hardware/xiaomi --depth=1
 fi
 
 if [ ! -d "device/xiaomi/sm6150-common" ]
